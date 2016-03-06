@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from bing import Bing
 from google import Google
+from ddg import Ddg
 import unittest
 
 BING_SEARCH_RESULT = [
@@ -55,27 +56,48 @@ GOOGLE_NEWS_RESULT = [
     {'link': 'http://www.mediapost.com/publications/article/240253/helloworld-mellow-mushroom-stella-artois-launch.html&sa=U&ei=3QGnVKerC9CouQTY1oC4Dg&ved=0CDcQqQIoADAK&usg=AFQjCNFYKt6wpBUqJjymlKdTIj2cOXXTCA', 'link_text': 'HelloWorld , Mellow Mushroom, Stella Artois Launch Holiday ...', 'additional_links': {}, 'link_info': 'Mellow Mushroom, digital agency HelloWorld and beer brand Stella Artois are sponsoring a sweepstakes where customers can follow Mellow ...', 'time': '16 Dec 2014', 'source': 'MediaPost Communications'}
     ]
 
+DUCKDUCKGO_NEWS_RESULT = [
+    {'link_text': 'Digital, Social, Mobile Marketing | HelloWorld', 'additional_links': {'additional_link1': 'helloworld.com'}, 'link_info': "50 Experts on the Future of Apps, Ads & Search. HelloWorld's Mike Puffer outlines what lies ahead for mobile in driving brand loyalty.", 'link': 'http://www.helloworld.com/'},
+    {'link_text': 'Total immersion, Serious fun! with Hello-World!', 'additional_links': {'additional_link1': 'hello-world.com'}, 'link_info': 'Main index for hello-world: links to login and all of the languages', 'link': 'http://www.hello-world.com/'},
+    {'link_text': '"Hello, World!" program - Wikipedia, the free encyclopedia', 'additional_links': {'additional_link1': 'en.wikipedia.org/wiki/Hello_world_program'}, 'link_info': 'A "Hello, World!" program is a computer program that outputs "Hello, World!" on a display device. Being a very simple program in most programming languages, it is ...', 'link': 'https://en.wikipedia.org/wiki/Hello_world_program'},
+    {'link_text': 'Lady Antebellum - Hello World - YouTube', 'additional_links': {'additional_link1': 'youtube.com/watch?v=al2DFQEZl4M'}, 'link_info': 'Music video by Lady Antebellum performing Hello World on You Tube.', 'link': 'http://www.youtube.com/watch?v=al2DFQEZl4M'},
+    {'link_text': 'Hello, World Page! - Louisiana Tech University', 'additional_links': {'additional_link1': 'latech.edu/~acm/HelloWorld-shtml'}, 'link_info': 'Hello World! Welcome to the ACM "Hello World" project. Everyone has seen the Hello World program used as a first exposure to a new language or environment.', 'link': 'http://www2.latech.edu/~acm/HelloWorld.shtml'},
+    {'link_text': 'Amazon.com: Hello World: Lady Antebellum: MP3 Downloads', 'additional_links': {'additional_link1': 'amazon.com/Hello-World/dp/B00330ZFAO'}, 'link_info': 'Your Amazon Music account is currently associated with a different marketplace. To enjoy Prime Music, go to Your Music Library and transfer your account to Amazon.com ...', 'link': 'http://www.amazon.com/Hello-World/dp/B00330ZFAO'},
+    {'link_text': 'Hello-World: English Games & Activities', 'additional_links': {'additional_link1': 'hello-world.com/languages-php/?language=English/'}, 'link_info': 'Hello-World World Languages for Children. search. My Language is: login; register; help; Computer programming; Our language program. Choose your family: privacy ...', 'link': 'http://www.hello-world.com/languages.php/?language=English/'},
+    {'link_text': 'Lady Antebellum - Hello World Lyrics | MetroLyrics', 'additional_links': {'additional_link1': 'metrolyrics.com/hello-world-lyrics-lady-antebellum.html'}, 'link_info': "Lyrics to 'Hello World' by Lady Antebellum: Well, hello world, how you been? Good to see you, my old friend Sometimes I feel cold as steel Broken like I'm", 'link': 'http://www.metrolyrics.com/hello-world-lyrics-lady-antebellum.html'},
+    {'link_text': 'Red Grammer - Hello World - Amazon.com Music', 'additional_links': {'additional_link1': 'amazon.com/Hello-World-Red-Grammer/dp/B000008QNS'}, 'link_info': 'Red Grammer is my favorite musician for young children (and adults as well), and this is my favorite of all his albums. My preschool class love to sign "Hello World ...', 'link': 'http://www.amazon.com/Hello-World-Red-Grammer/dp/B000008QNS'},
+    {'link_text': 'Marketing Platform | Marketing Solutions | HelloWorld', 'additional_links': {'additional_link1': 'helloworld.com/what-we-do/'}, 'link_info': "Street Cred. HelloWorld is a digital marketing solutions company working with the world's leading brands across all industry verticals. Founded in 1999, HelloWorld ...", 'link': 'http://www.helloworld.com/what-we-do/'},
+    ]
+
+
 class BingTest(unittest.TestCase):
 
     def test_bing_scrape_search_result(self):
         with open('ipbing') as fp:
-            bing_search_result = Bing.scrape_search_result(BeautifulSoup(fp))
+            bing_search_result = Bing.scrape_search_result(BeautifulSoup(fp, 'html.parser'))
             self.assertEqual(BING_SEARCH_RESULT, bing_search_result)
 
     def test_bing_scrape_news_result(self):
         with open('ipbingnews') as fp:
-            bing_news_result = Bing.scrape_news_result(BeautifulSoup(fp))
+            bing_news_result = Bing.scrape_news_result(BeautifulSoup(fp, 'html.parser'))
             self.assertEqual(BING_NEWS_RESULT, bing_news_result)
 
     def test_google_scrape_search_result(self):
         with open('ipgoogle') as fp:
-            google_search_result = Google.scrape_search_result(BeautifulSoup(fp))
+            google_search_result = Google.scrape_search_result(BeautifulSoup(fp, 'html.parser'))
             self.assertEqual(GOOGLE_SEARCH_RESULT, google_search_result)
 
     def test_google_scrape_news_result(self):
         with open('ipgooglenews') as fp:
-            google_news_result = Google.scrape_news_result(BeautifulSoup(fp))
+            google_news_result = Google.scrape_news_result(BeautifulSoup(fp, 'html.parser'))
             self.assertEqual(GOOGLE_NEWS_RESULT, google_news_result)
+
+class DuckduckgoTest(unittest.TestCase):
+
+    def test_ddg_scrape_search_result(self):
+        with open('ipduckduckgo') as fp:
+            ddg_search_result = Ddg.scrape_search_result(BeautifulSoup(fp, 'html.parser'), 10, 0)
+            self.assertEqual(DUCKDUCKGO_NEWS_RESULT, ddg_search_result)
 
 if __name__ == '__main__':
     unittest.main()

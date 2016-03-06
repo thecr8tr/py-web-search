@@ -1,0 +1,1507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+  <meta name="referrer" content="origin">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>hello world at DuckDuckGo</title>
+  <link title="DuckDuckGo (HTML)" type="application/opensearchdescription+xml" rel="search" href="/opensearch_html.xml">
+  <link href="/favicon.ico" rel="shortcut icon" />
+  <link rel="apple-touch-icon" href="/assets/logo_icon128.v101.png">
+  <link rel="image_src" href="/assets/logo_homepage.normal.v101.png"/>  
+  <link type="text/css" media="handheld, all" href="/s640.css" rel="stylesheet" />
+
+  <style type="text/css">
+
+    #content_wrapper, #zero_click_wrapper {
+      margin: auto;
+      padding-left: 50px;
+      min-width: 100px;
+    }
+
+    #content {
+      padding-top: 20px;
+      min-width: 100px;
+    }
+
+    #did_you_mean {
+      padding-left: 34px;
+    }
+
+    #feedback {
+      display: block;
+    }
+
+    #links, #zero_click {
+      width: 80%;
+    }
+
+    #logo {
+      float: left;
+      margin-top: -10px;
+      margin-left: -80px;
+    }
+
+    #search_form_homepage {
+      float: left;
+      width: 90%;
+      max-width: 700px;
+      min-width: 300px;
+    }
+
+    #search_form_input_homepage {
+      width: 80%;
+      float: left;
+    }
+
+    #search_wrapper_homepage {
+      width: 42px;
+      float: left;
+    }
+
+    #side_wrapper {
+      display: block;
+    }
+
+    #side {
+      right: 2%;
+      position: fixed;
+      top: 100px;
+      width: 90px;
+    }
+
+    #zero_click_abstract {
+/* let the highlight go across the image */
+/*      max-width: 484px; */
+      margin: 5px;
+      padding: 5px;
+      margin-left: 10px;
+    }
+
+    /* put image inside abstract so don't need margin. */
+    #zero_click_image {
+      margin-top: 0px;
+    }
+
+    #zero_click_wrapper {
+      display: block;
+      visibility: visible;
+      padding-left: 0px;
+      margin: 0;
+    }
+
+    #zero_click_wrapper2 {
+      max-height:150px;
+      overflow:auto;
+    }
+
+    #zero_click_plus_wrapper {
+      display: none;
+    }
+
+   
+    .web-result,.zero-click-result {
+    	border:1px solid transparent;
+    }
+
+    .web-result:hover,.zero-click-result:hover {
+      background:url(/assets/results_highlight_bg.v101.png) repeat-x;
+      background-color:#EAEAEA;
+      border: 1px solid #BFBFBF !important;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .web-result-sponsored:hover {
+     background: #eae3ad !important;
+    }
+
+    .web-result-sponsored {
+    background: #fff7d0;
+    border: 1px solid #fef9eb !important;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 2px;;
+    }
+
+    .web-result-sponsored-text {
+    float:right;
+    color: #555555;
+    padding-right: 20px;
+    font-size: 12px;
+    }
+
+    .web-result-sponsored-double {
+        width: 50%;
+        float: left;
+    }
+
+    .web-result-sponsored-double.web-result-sponsored-last {
+        clear: none;
+        margin-left: 5px;
+        margin-right: -30px;
+    }
+
+    .web-result-sponsored-double .web-result-sponsored-text {
+        display: none;
+    }
+
+    .nav-link {
+      float: left;
+      clear: none;
+    }
+
+    .navbutton {
+      background-color:transparent;
+      border: 0px none;
+      cursor:pointer;
+      font-size:16px;
+      font-weight:bold;
+      text-decoration:underline;
+      color: #1168CC;
+      border-bottom: 1px solid transparent;
+      padding: 0px;
+    }
+
+    input.navbutton:hover {
+    	border-bottom: 1px solid #1168CC;
+    }
+
+    @media only handheld, 
+           only screen and (max-device-width: 800px) {
+      html {
+        overflow-x: hidden;
+      }
+
+      body {
+        margin-left: 10px;
+        width: 97%;
+      }
+
+      #content {
+        padding-top: 0px;
+      }
+
+      #content_wrapper,#content,#links,#links_wrapper,#zero_click_wrapper {
+        width: 97%;
+        min-width: 97%;
+        background: #FFF;
+        padding-right:5px;
+        margin-right:0;
+        padding-left:0;
+        margin-left:0;
+      }
+
+      #feedback, #side_wrapper, #logo {
+        display: none;
+      }
+      .web-result-sponsored-double,
+      .web-result-sponsored-double.web-result-sponsored-last {
+        float: none;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body class="yui-skin-sam">
+  <a name="top" id="top"></a>
+
+  <form action="/html/" method="POST">
+    <input type="text" name="state_hidden" id="state_hidden" />
+  </form>
+
+  <div id="content_wrapper">
+  <div id="content">
+
+        <a title="DuckDuckGo" href="/html/">
+	  <img width="60" height="60" src="/assets/logo_icon60.v101.png" alt="DuckDuckGo" id="logo"/>
+	</a>
+
+
+    <form name="x" id="search_form_homepage" class="no-menu" action="/html/" method="POST">
+	  <input name="q" autocomplete="off" id="search_form_input_homepage" type="text" value="hello world">
+
+	  
+	  
+
+<input name="kl" value="us-en" type="hidden">
+	  
+	  
+	  
+	  
+
+	  <div id="search_wrapper_homepage">
+	  <input name="b" id="search_button_homepage" value="" title="Search" alt="Search" type="submit">
+	  </div>
+    </form>
+
+<div style="padding-top: 20px;">&nbsp;</div>
+
+
+
+
+
+<!-- Web results are present -->
+
+  <div id="links_wrapper">
+  <div id="links">
+
+      
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.helloworld.com/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.helloworld.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.helloworld.com/">Digital, Social, Mobile Marketing | <b>HelloWorld</b></a>
+          
+
+	    
+            <div class="snippet">50 Experts on the Future of Apps, Ads &amp; Search. <b>HelloWorld&#x27;s</b> Mike Puffer outlines what lies ahead for mobile in driving brand loyalty.</div>
+	    
+
+            <div class="url">
+              helloworld.com
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.hello-world.com/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.hello-world.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.hello-world.com/">Total immersion, Serious fun! with <b>Hello-World</b>!</a>
+          
+
+	    
+            <div class="snippet">Main index for <b>hello-world</b>: links to login and all of the languages</div>
+	    
+
+            <div class="url">
+              hello-world.com
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://en.wikipedia.org/wiki/Hello_world_program">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/en.wikipedia.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://en.wikipedia.org/wiki/Hello_world_program">&quot;<b>Hello</b>, <b>World</b>!&quot; program - Wikipedia, the free encyclopedia</a>
+          
+
+	    
+            <div class="snippet">A &quot;<b>Hello</b>, <b>World</b>!&quot; program is a computer program that outputs &quot;<b>Hello</b>, <b>World</b>!&quot; on a display device. Being a very simple program in most programming languages, it is ...</div>
+	    
+
+            <div class="url">
+              en.wikipedia.org/wiki/Hello_world_program
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.youtube.com/watch?v=al2DFQEZl4M">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.youtube.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.youtube.com/watch?v=al2DFQEZl4M">Lady Antebellum - <b>Hello</b> <b>World</b> - YouTube</a>
+          
+
+	    
+            <div class="snippet">Music video by Lady Antebellum performing <b>Hello</b> <b>World</b> on You Tube.</div>
+	    
+
+            <div class="url">
+              youtube.com/watch?v=al2DFQEZl4M
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www2.latech.edu/~acm/HelloWorld.shtml">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www2.latech.edu.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www2.latech.edu/~acm/HelloWorld.shtml"><b>Hello</b>, <b>World</b> Page! - Louisiana Tech University</a>
+          
+
+	    
+            <div class="snippet"><b>Hello</b> <b>World</b>! Welcome to the ACM &quot;<b>Hello</b> <b>World</b>&quot; project. Everyone has seen the <b>Hello</b> <b>World</b> program used as a first exposure to a new language or environment.</div>
+	    
+
+            <div class="url">
+              latech.edu/~acm/HelloWorld-shtml
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.amazon.com/Hello-World/dp/B00330ZFAO">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.amazon.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.amazon.com/Hello-World/dp/B00330ZFAO">Amazon.com: <b>Hello</b> <b>World</b>: Lady Antebellum: MP3 Downloads</a>
+          
+
+	    
+            <div class="snippet">Your Amazon Music account is currently associated with a different marketplace. To enjoy Prime Music, go to Your Music Library and transfer your account to Amazon.com ...</div>
+	    
+
+            <div class="url">
+              amazon.com/Hello-World/dp/B00330ZFAO
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.hello-world.com/languages.php/?language=English/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.hello-world.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.hello-world.com/languages.php/?language=English/"><b>Hello-World</b>: English Games &amp; Activities</a>
+          
+
+	    
+            <div class="snippet"><b>Hello-World</b> <b>World</b> Languages for Children. search. My Language is: login; register; help; Computer programming; Our language program. Choose your family: privacy ...</div>
+	    
+
+            <div class="url">
+              hello-world.com/languages-php/?language=English/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.metrolyrics.com/hello-world-lyrics-lady-antebellum.html">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.metrolyrics.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.metrolyrics.com/hello-world-lyrics-lady-antebellum.html">Lady Antebellum - <b>Hello</b> <b>World</b> Lyrics | MetroLyrics</a>
+          
+
+	    
+            <div class="snippet">Lyrics to <b>&#x27;Hello</b> <b>World&#x27;</b> by Lady Antebellum: Well, <b>hello</b> <b>world</b>, how you been? Good to see you, my old friend Sometimes I feel cold as steel Broken like I&#x27;m</div>
+	    
+
+            <div class="url">
+              metrolyrics.com/hello-world-lyrics-lady-antebellum.html
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.amazon.com/Hello-World-Red-Grammer/dp/B000008QNS">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.amazon.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.amazon.com/Hello-World-Red-Grammer/dp/B000008QNS">Red Grammer - <b>Hello</b> <b>World</b> - Amazon.com Music</a>
+          
+
+	    
+            <div class="snippet">Red Grammer is my favorite musician for young children (and adults as well), and this is my favorite of all his albums. My preschool class love to sign &quot;<b>Hello</b> <b>World</b> ...</div>
+	    
+
+            <div class="url">
+              amazon.com/Hello-World-Red-Grammer/dp/B000008QNS
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.helloworld.com/what-we-do/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.helloworld.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.helloworld.com/what-we-do/">Marketing Platform | Marketing Solutions | <b>HelloWorld</b></a>
+          
+
+	    
+            <div class="snippet">Street Cred. <b>HelloWorld</b> is a digital marketing solutions company working with the <b>world&#x27;s</b> leading brands across all industry verticals. Founded in 1999, <b>HelloWorld</b> ...</div>
+	    
+
+            <div class="url">
+              helloworld.com/what-we-do/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://msdn.microsoft.com/en-us/library/k1sx6ed2.aspx">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/msdn.microsoft.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://msdn.microsoft.com/en-us/library/k1sx6ed2.aspx"><b>Hello</b> <b>World</b> -- Your First Program (C# Programming Guide)</a>
+          
+
+	    
+            <div class="snippet">The following procedure creates a C# version of the traditional &quot;<b>Hello</b> <b>World</b>!&quot; program. The program displays the string <b>Hello</b> <b>World</b>! For more examples of introductory ...</div>
+	    
+
+            <div class="url">
+              msdn.microsoft.com/en-us/library/k1sx6ed2-aspx
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://www.manning.com/books/hello-world">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.manning.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://www.manning.com/books/hello-world">Manning | <b>Hello</b> <b>World</b>!</a>
+          
+
+	    
+            <div class="snippet">About the Technology. Though the concepts and ideas presented apply to any programming language, <b>Hello</b> <b>World</b>! uses the easy to learn Python programming language.</div>
+	    
+
+            <div class="url">
+              manning.com/books/hello-world
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://www.helloworldclothing.com/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.helloworldclothing.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://www.helloworldclothing.com/"><b>Hello</b> <b>World</b> - Clothing</a>
+          
+
+	    
+            <div class="snippet"><b>Hello</b> <b>World</b>® is the brain child of a loving family who wanted an easier way for savvy parents to connect with the needs of their children and with their own <b>world</b>.</div>
+	    
+
+            <div class="url">
+              helloworldclothing.com
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://en.wikipedia.org/wiki/Hello_World_(song)">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/en.wikipedia.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://en.wikipedia.org/wiki/Hello_World_(song)"><b>Hello</b> <b>World</b> (song) - Wikipedia, the free encyclopedia</a>
+          
+
+	    
+            <div class="snippet">&quot;<b>Hello</b> <b>World</b>&quot; is a song written by Tom Douglas, Tony Lane and David Lee, and recorded by American country music group Lady Antebellum. It was released in October 2010 ...</div>
+	    
+
+            <div class="url">
+              en.wikipedia.org/wiki/Hello_World_(song)
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://guides.github.com/activities/hello-world/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/guides.github.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://guides.github.com/activities/hello-world/"><b>Hello</b> <b>World</b> · GitHub Guides</a>
+          
+
+	    
+            <div class="snippet">The <b>Hello</b> <b>World</b> project is a time-honored tradition in computer programming. It is a simple exercise that gets you started when learning something new.</div>
+	    
+
+            <div class="url">
+              guides.github.com/activities/hello-world/
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://hello-hello.com/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/hello-hello.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://hello-hello.com/"><b>Hello</b>-<b>Hello</b>: Best Language Learning apps for iPad, iPhone ...</a>
+          
+
+	    
+            <div class="snippet">Learn a new language anytime, anywhere with <b>Hello</b>-<b>Hello</b>. Top-selling apps for schools, libraries, companies and more!</div>
+	    
+
+            <div class="url">
+              hello-hello.com
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.vevo.com/watch/lady-antebellum/Hello-World/USCN21000027">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.vevo.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.vevo.com/watch/lady-antebellum/Hello-World/USCN21000027"><b>Hello</b> <b>World</b> - Lady Antebellum - Vevo</a>
+          
+
+	    
+            <div class="snippet">Watch <b>Hello</b> <b>World</b> by Lady Antebellum online at vevo.com. Discover the latest Country music videos by Lady Antebellum on Vevo.</div>
+	    
+
+            <div class="url">
+              vevo.com/watch/lady-antebellum/Hello-World/USCN210...
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://msdn.microsoft.com/en-us/library/aa288463(v=vs.71).aspx">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/msdn.microsoft.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://msdn.microsoft.com/en-us/library/aa288463(v=vs.71).aspx"><b>Hello</b> <b>World</b> Tutorial (C#) - MSDN - Microsoft</a>
+          
+
+	    
+            <div class="snippet">This tutorial shows several versions of a <b>Hello</b> <b>World</b> program in C#. Sample Files. See <b>Hello</b> <b>World</b> Sample to download and build the sample files discussed in this ...</div>
+	    
+
+            <div class="url">
+              msdn.microsoft.com/en-us/library/aa288463(v=vs-71)-aspx
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://www.helloworld.com.au/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.helloworld.com.au.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://www.helloworld.com.au/"><b>helloworld</b> - Deals on Accommodation, Flights, Cruises and More</a>
+          
+
+	    
+            <div class="snippet">Discover the best deals on flights, hotels, cars, cruises in Australia at <b>helloworld</b> - we&#x27;re always here for you - in stores, online and on the phone!</div>
+	    
+
+            <div class="url">
+              helloworld.com.au
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://helloworld.org/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/helloworld.org.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://helloworld.org/"><b>Hello</b> <b>World</b> - Simple source code examples</a>
+          
+
+	    
+            <div class="snippet">Ever wondered how to write <b>Hello</b> <b>World</b> in some random programming language? Here we list examples of the <b>Hello</b> <b>World</b> program in various programming languages.</div>
+	    
+
+            <div class="url">
+              helloworld.org
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.youtube.com/watch?v=rOU4YiuaxAM">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.youtube.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.youtube.com/watch?v=rOU4YiuaxAM">BUMP OF CHICKEN「Hello,world!」 - YouTube</a>
+          
+
+	    
+            <div class="snippet">Rating is available when the video has been rented. BUMP OF CHICKEN「Hello,world! / コロニー」http://amzn.to/1cUREVd 2015.04.22 (wed) Release ...</div>
+	    
+
+            <div class="url">
+              youtube.com/watch?v=rOU4YiuaxAM
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://www.whitehouse.gov/blog/2015/05/17/hello-world">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.whitehouse.gov.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://www.whitehouse.gov/blog/2015/05/17/hello-world"><b>Hello</b>, <b>World</b> | whitehouse.gov</a>
+          
+
+	    
+            <div class="snippet">With a brainteaser, Deputy Chief Technology Officer Ed Felten illustrates the wide range of computer science applications. Though it wasn&#x27;t true for President Obama ...</div>
+	    
+
+            <div class="url">
+              whitehouse.gov/blog/2015/05/17/hello-world
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://groups.engin.umd.umich.edu/CIS/course.des/cis400/c/hworld.html">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/groups.engin.umd.umich.edu.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://groups.engin.umd.umich.edu/CIS/course.des/cis400/c/hworld.html">The C Programming Language: <b>Hello</b> <b>world</b>! Example Program</a>
+          
+
+	    
+            <div class="snippet">The C Programming Language <b>Hello</b> <b>world</b>! Example Program. /* <b>Hello</b> <b>World</b> program */ #include&lt;stdio.h&gt; main() { printf(&quot;Hello <b>World</b>&quot;);}</div>
+	    
+
+            <div class="url">
+              groups.engin.umd.umich.edu/CIS/course-des/cis400/c/hworld-html
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://cloud.google.com/appengine/docs/python/?hl=ja&amp;csw=1">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/cloud.google.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://cloud.google.com/appengine/docs/python/?hl=ja&amp;csw=1"><b>Hello</b>, <b>World</b>! in 5 minutes - Python — Google Cloud Platform</a>
+          
+
+	    
+            <div class="snippet"><b>Hello</b>, <b>World</b>! in 5 minutes; Creating a Guestbook. 1. Download the App Engine SDK; 2. Explaining the webapp2 Framework; 3. Using the Users Service ...</div>
+	    
+
+            <div class="url">
+              cloud.google.com/appengine/docs/python/?hl=ja&amp;csw=1
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.yelp.com/biz/hello-world-philadelphia-3">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.yelp.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.yelp.com/biz/hello-world-philadelphia-3"><b>Hello</b> <b>World</b> - 20 Photos - Home Decor - University City ...</a>
+          
+
+	    
+            <div class="snippet">Specialties. Philadelphia&#x27;s Go-To Home &amp; Lifestyle Store. <b>Hello</b> <b>World</b> specializes in a mix of contemporary design, custom upholstery, unique gifts, vegan handbags ...</div>
+	    
+
+            <div class="url">
+              yelp.com/biz/hello-world-philadelphia-3
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.last.fm/music/Lady+Antebellum/_/Hello+World">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.last.fm.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.last.fm/music/Lady+Antebellum/_/Hello+World">Lady Antebellum — <b>Hello</b> <b>World</b> — Listen and discover music at ...</a>
+          
+
+	    
+            <div class="snippet">Watch the video or listen to Lady Antebellum - <b>Hello</b> <b>World</b> for free. <b>Hello</b> <b>World</b> appears on the album Need You Now. According to the <b>Hello</b> <b>World</b> Songfacts, Someone ...</div>
+	    
+
+            <div class="url">
+              last.fm/music/Lady+Antebellum/_/Hello+World
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://www.thehelloworldprogram.com/">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.thehelloworldprogram.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://www.thehelloworldprogram.com/">Hands-on Computer Science - The <b>Hello</b> <b>World</b> Program</a>
+          
+
+	    
+            <div class="snippet"><b>Hello</b> <b>World</b>! Learn computer science, programming, and web development with us, your educational and entertaining super friends. Puppets are social creatures, too!</div>
+	    
+
+            <div class="url">
+              thehelloworldprogram.com
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://www.scribd.com/doc/301188473/Hello-World2">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/www.scribd.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://www.scribd.com/doc/301188473/Hello-World2"><b>Hello</b> World2 - scribd.com</a>
+          
+
+	    
+            <div class="snippet"><b>Hello</b> World2 - Free download as Word Doc (.doc / .docx), PDF File (.pdf), Text File (.txt) or read online for free. <b>hello</b> <b>world</b></div>
+	    
+
+            <div class="url">
+              scribd.com/doc/301188473/Hello-World2
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="http://asm.sourceforge.net/intro/hello.html">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/asm.sourceforge.net.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="http://asm.sourceforge.net/intro/hello.html"><b>Hello</b>, <b>world</b>! - SourceForge</a>
+          
+
+	    
+            <div class="snippet">Now we will write our program, the old classic &quot;<b>Hello</b>, <b>world</b>&quot; (<b>hello</b>.asm). You can download its source and binaries here But before you do, let me explain several basics.</div>
+	    
+
+            <div class="url">
+              asm.sourceforge.net/intro/hello-html
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+  
+
+
+            <div class="results_links results_links_deep web-result">
+
+          <div class="icon_fav" style="display: block;">
+          	
+            	<a rel="nofollow" href="https://docs.oracle.com/javase/tutorial/getStarted/cupojava/index.html">
+	            	<img width="16" height="16" alt=""
+		            	src="/i/docs.oracle.com.ico" style="visibility: visible;" name="i15" />
+	          	</a>
+	        
+          </div>
+
+          <div class="links_main links_deep"> <!-- This is the visible part -->
+
+          
+           	<a rel="nofollow" class="large" href="https://docs.oracle.com/javase/tutorial/getStarted/cupojava/index.html">Lesson: The &quot;<b>Hello</b> <b>World</b>!&quot; Application (The Java™ Tutorials ...</a>
+          
+
+	    
+            <div class="snippet">The sections listed below provide detailed instructions for compiling and running a simple &quot;<b>Hello</b> <b>World</b>!&quot; application. The first section provides information on ...</div>
+	    
+
+            <div class="url">
+              docs.oracle.com/javase/tutorial/getStarted/cupojava/index...
+              
+            </div>
+
+          </div>
+
+        </div>
+
+  
+
+
+
+
+        
+        
+                <div class="results_links_more nav-link">
+        <form action="/html/" method="POST">
+          <!-- <a rel="next" href="/html/?q=hello+world&amp;t=D&amp;v=l&amp;l=us-en&amp;p=1&amp;s=30&amp;o=json&amp;ct=US&amp;ss_mkt=us&amp;sp=0&amp;nextParams=Keywords%3Dhello%2520world%26xargs%3D12KPjg1pZSrp68i%252D%255FoMPCRErjGnQNVmZ615JIuTcQ%255FQZAD6A5dYdR%255FePqBypItDrUtu0KJk6nQo%255FpPIfD7ucu6%26hData%3D12KPjg1o1g5LKOx8uscbrMOeCHxlYOl5DGh7pmepd8GdEr83dpWeJ8T5Px&amp;dc=31&amp;api=d.js">Next Page &gt;</a> //-->
+          <input type="submit" class='navbutton' value="Next">
+          <input type="hidden" name="q" value="hello world">
+          <input type="hidden" name="s" value="30">
+	  <input type="hidden" name="nextParams" value="Keywords=hello%20world&amp;xargs=12KPjg1pZSrp68i%2D%5FoMPCRErjGnQNVmZ615JIuTcQ%5FQZAD6A5dYdR%5FePqBypItDrUtu0KJk6nQo%5FpPIfD7ucu6&amp;hData=12KPjg1o1g5LKOx8uscbrMOeCHxlYOl5DGh7pmepd8GdEr83dpWeJ8T5Px">
+	  <input type="hidden" name="v" value="l">
+          <input type="hidden" name="o" value="json">
+          <input type="hidden" name="dc" value="31">
+          <input type="hidden" name="api" value="d.js">
+
+	  
+	  
+
+<input name="kl" value="us-en" type="hidden">
+	  
+	  
+	  
+	  
+        </form>
+                </div>
+        
+        <div style="clear:both;"></div>
+
+	</div>
+	</div> <!-- links wrapper //--> 
+
+
+
+
+    <div id="side_wrapper">
+    <div id="side_wrapper2">
+      <div id="side">
+
+      <div class="ch7">
+        <a href="/spread.html" rel="nofollow" class="les2">Spread DDG!</a>
+      </div>
+
+      <div style="margin-top: 12px;" class="ch4">
+        Try search on:
+      </div>
+
+      <div class="spacer_top_3">
+        <a href=
+        "http://www.bing.com/images/search?q=hello%20world&amp;go=&amp;form=QBIL&amp;qs=n&amp;sk=&amp;sc=8-3"
+        title="Bing Images" rel="nofollow"><img src=
+        "/b_images2.png" class="inline" /></a> <a title="Bing Images"
+        href=
+        "http://www.bing.com/images/search?q=hello%20world&amp;go=&amp;form=QBIL&amp;qs=n&amp;sk=&amp;sc=8-3"
+        rel="nofollow" class="les2">!bimages</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="http://maps.google.com/maps?q=hello%20world" rel=
+        "nofollow" title="Google Maps"><img src="/b_maps2.png"
+        class="inline" /></a> <a title="Google Maps" href=
+        "http://maps.google.com/maps?q=hello%20world" rel="nofollow"
+        class="les2">!gmaps</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a title="Yahoo! News" href=
+        "http://news.search.yahoo.com/search?p=hello%20world&amp;fr2=sb-top&amp;fr=news-us-ss&amp;type=all&amp;age=all&amp;sao=1"
+        rel="nofollow"><img src="/b_news2.png" class="inline" /></a>
+        <a title="Yahoo! News" href=
+        "http://news.search.yahoo.com/search?p=hello%20world&amp;fr2=sb-top&amp;fr=news-us-ss&amp;type=all&amp;age=all&amp;sao=1"
+        rel="nofollow" class="les2">!ynews</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href=
+        "http://www.youtube.com/results?search_query=hello%20world"
+        rel="nofollow"><img src="/b_youtube2.png" class=
+        "inline" /></a> <a href=
+        "http://www.youtube.com/results?search_query=hello%20world"
+        rel="nofollow" class="les2">!youtube</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="http://search.twitter.com/search?q=hello%20world"
+	   rel="nofollow"><img src="/b_twitter2.png" class="inline" /></a>
+	<a href="http://search.twitter.com/search?q=hello%20world"
+	   rel="nofollow" class="les2">!twitter</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="http://www.facebook.com/search/?q=hello%20world"
+        rel="nofollow"><img src="/b_facebook2.png" class=
+        "inline" /></a> <a href=
+        "http://www.facebook.com/search/?q=hello%20world" rel=
+        "nofollow" class="les2">!facebook</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href=
+        "http://amazon.com/s/?tag=dudugo-20&amp;url=search-alias%3Daps&amp;field-keywords=hello%20world"
+        rel="nofollow"><img src="/b_amazon2.png" class="inline" /></a>
+        <a href=
+        "http://amazon.com/s/?tag=dudugo-20&amp;url=search-alias%3Daps&amp;field-keywords=hello%20world"
+        rel="nofollow" class="les2">!amazon</a>
+      </div>
+
+      <div class="spacer_top_10">
+        <a href="/bang.html" rel="nofollow" class="les2">More w/ !bang...</a>
+      </div>
+
+      <div class="spacer_top_3">
+        <a href="/goodies.html" rel="nofollow" class="les2">More goodies...</a>
+      </div>
+    </div>
+    </div>
+    </div> <!-- side_wrapper //-->
+ 
+
+
+
+      <a rel="nofollow" href="/feedback.html" target="_new"><div class="k_float k_bottom k_right" id="feedback"></div></a>
+
+    <div id="bottom_spacing2"></div>
+
+    
+      <img src="/t/sl_1457221453"/>
+    
+
+  </div>
+  </div>
+</body>
+</html>
